@@ -39,6 +39,14 @@
     --contrast-color: #ffffff;
 }
 
+.black-background {
+    --background-color: black;
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --surface-color: #252525;
+    --contrast-color: #ffffff;
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -1738,6 +1746,8 @@ section,
     background-image: url('/assets/img/section-bg2.jpg');
 }
 
-/*.branding {
-    background-image: url('file:///C:/Users/UmarTariq/Documents/My%20Computer/Work/AyrumConsulting/Ayrum.ca/assets/img/topnav-bg.png');
-}*/
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    transform: translateY(-5px);
+}
