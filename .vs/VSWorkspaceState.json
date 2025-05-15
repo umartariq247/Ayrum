@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\js"
+    "\\Blogs",
+    "\\Blogs\\general"
   ],
-  "SelectedNode": "\\assets\\js\\footerlinks.js",
+  "SelectedNode": "\\Blogs\\general\\general-blog.html",
   "PreviewInSolutionExplorer": false
 }
