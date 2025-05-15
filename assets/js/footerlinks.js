@@ -9,34 +9,34 @@
     const linkedInLink = "https://www.linkedin.com/company/ayrum-it-consulting";
 
     const headerNavMenu = '<ul>\
-                        <li><a href="index.html" class="">Home<br></a></li>\
-                        <li><a href="index.html#about">About</a></li>\
+                        <li><a href="/index.html" class="">Home<br></a></li>\
+                        <li><a href="/index.html#about">About</a></li>\
                         <li class="dropdown">\
                             <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>\
                             <ul>\
-                                <li><a href="web-app-development.html">Web App Development</a></li>\
-                                <li><a href="mobile-app-development.html">Mobile App Dvelopment</a></li>\
-                                <li><a href="websites-webportals.html">Websites & Portals Development </a></li>\
-                                <li><a href="microsoft-365.html">Microsoft 365 Services</a></li>\
+                                <li><a href="/web-app-development.html">Web App Development</a></li>\
+                                <li><a href="/mobile-app-development.html">Mobile App Dvelopment</a></li>\
+                                <li><a href="/websites-webportals.html">Websites & Portals Development </a></li>\
+                                <li><a href="/microsoft-365.html">Microsoft 365 Services</a></li>\
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
                             </ul>\
-                        <li><a href="blogs.html">Blogs</a></li>\
+                        <li><a href="/index.html">Blogs</a></li>\
                     </ul>';
 
     const footerData = {
         usefulLinks: [
-            { text: 'Home', url: 'index.html' },
-            { text: 'About us', url: 'index.html#about' },
-            { text: 'Services', url: 'index.html#services' },
-            { text: 'Terms of service', url: 'terms-of-service.html' },
-            { text: 'Privacy policy', url: 'privacy-policy.html' },
+            { text: 'Home', url: '/index.html' },
+            { text: 'About us', url: '/index.html#about' },
+            { text: 'Services', url: '/index.html#services' },
+            { text: 'Terms of service', url: '/terms-of-service.html' },
+            { text: 'Privacy policy', url: '/privacy-policy.html' },
         ],
         services: [
-            { text: 'Web Apps Services', url: 'web-app-development.html' },
-            { text: 'Mobile Apps Services', url: 'mobile-app-development.html' },
-            { text: 'Websites & Portals', url: 'websites-webportals.html' },
-            { text: 'Microsoft 365 Services', url: 'microsoft-365.html' },
-            { text: 'Cloud Solutions & Migration', url: 'cloud-solutions.html' },
+            { text: 'Web Apps Services', url: '/web-app-development.html' },
+            { text: 'Mobile Apps Services', url: '/mobile-app-development.html' },
+            { text: 'Websites & Portals', url: '/websites-webportals.html' },
+            { text: 'Microsoft 365 Services', url: '/microsoft-365.html' },
+            { text: 'Cloud Solutions & Migration', url: '/cloud-solutions.html' },
         ],
         resources: [
             { text: 'Blogs', url: '#' },

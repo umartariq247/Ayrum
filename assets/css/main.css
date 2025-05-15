@@ -1751,3 +1751,13 @@ section,
     transition: 0.3s;
     transform: translateY(-5px);
 }
+.call-to-actions section{border-radius:10px;}
+.call-to-actions .tagline, .call-to-actions .tagline {
+    background-color: rgba(0, 0, 0, 0.2); /* semi-transparent black */
+    color: #fff; /* white text */
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(6px); /* blur the background */
+    -webkit-backdrop-filter: blur(6px); /* for Safari */
+    display: inline-block; /* shrink to content */
+}

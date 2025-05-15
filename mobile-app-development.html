@@ -62,9 +62,8 @@
         <div class="ps-2 pe-2 branding d-flex align-items-center bg-light">
 
             <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo d-flex align-items-center me-auto">
-                    <!-- Uncomment the line below if you also wish to use an image logo -->
-                    <img src="assets/img/ayrum-logo.png" alt="">
+                <a href="/index.html" class="logo d-flex align-items-center me-auto">
+                    <img src="/assets/img/ayrum-logo.png" alt="">
                     <h6 class="sitename"><i class="bi bi-brilliance"></i> IT Consulting Inc.</h6>
                 </a>
 
@@ -466,17 +465,21 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/footerlinks.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!--<script src="/assets/js/footerlinks.js?v=<%= Date.now() %>"></script>-->
+    <script>
+        const script = document.createElement('script');
+        script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
+        document.head.appendChild(script);
+    </script>
 </body>
 
 </html>
