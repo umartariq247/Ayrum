@@ -37,6 +37,7 @@
     --heading-color: #ffffff;
     --surface-color: #252525;
     --contrast-color: #ffffff;
+    background-color: var(--accent-color);
 }
 
 .black-background {
