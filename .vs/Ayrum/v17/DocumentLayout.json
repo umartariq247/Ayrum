@@ -37,6 +37,10 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "main.js",
@@ -46,12 +50,7 @@
               "RelativeToolTip": "assets\\js\\main.js",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-16T20:18:13.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2025-05-16T20:18:13.178Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "starter-page - Copy.html",
               "ViewState": "AgIAADgAAAAAAAAAAAAAAD0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-16T20:04:08.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T20:04:08.165Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAAICAAAAAAAAAAAAAA0CAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-16T02:24:01.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T02:24:01.333Z"
             },
             {
               "$type": "Document",
@@ -111,7 +108,7 @@
               "RelativeDocumentMoniker": "blogs\\general\\How-Much-Does-a-Website-Really-Cost-in-2025.html",
               "ToolTip": "C:\\Users\\UmarTariq\\Documents\\My Computer\\Work\\AyrumConsulting\\Ayrum\\blogs\\general\\How-Much-Does-a-Website-Really-Cost-in-2025.html",
               "RelativeToolTip": "blogs\\general\\How-Much-Does-a-Website-Really-Cost-in-2025.html",
-              "ViewState": "AgIAACkBAAAAAAAAAAAswFIBAABCAAAAAAAAAA==",
+              "ViewState": "AgIAACkBAAAAAAAAAAAuwFIBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-05-16T01:46:51.747Z",
               "EditorCaption": ""
