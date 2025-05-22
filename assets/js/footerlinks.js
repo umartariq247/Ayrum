@@ -21,6 +21,7 @@
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
                             </ul>\
                         <li><a href="/index.html">Blogs</a></li>\
+                        <li><a href="/cost-calculator.html">Cost Calculator</a></li>\
                     </ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>';
 
     const footerData = {

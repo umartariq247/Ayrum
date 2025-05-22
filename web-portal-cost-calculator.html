@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Cost Calculator - Ayrum Consulting</title>
-    <meta name="description" content="Quickly estimate the cost of your IT services with our easy-to-use cost calculator. Get transparent pricing for custom web, mobile, and cloud solutions.">
+    <title>Web Portal Cost Calculator - Ayrum Consulting</title>
+    <meta name="description" content="Easily estimate the cost of building your web apps or portals. Get instant pricing based on features, design, and technology.">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ7K131LV"></script>
     <script>
@@ -32,7 +32,17 @@
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <style>
+        .calculator-box {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-label{font-weight:bold;}
+    </style>
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
@@ -46,7 +56,6 @@
             <div class="container-fluid d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
                     <a href="tel:+14165789966"><i><span><img src="https://flagcdn.com/ca.svg" width="20" alt="Canada Flag" style="margin-right: 5px;"> +1 (416) 578 9966</span></i></a>
-                    <!--<i class="bi bi-envelope d-flex align-items-center"><a href="mailto:umar.tariq247@gmail.com">info@ayrum.ca</a></i>-->
 
                 </div>
                 <div class="social-links d-none d-md-flex align-items-center">
@@ -99,8 +108,8 @@
                 <div class="container">
                     <div class="row d-flex justify-content-center text-center">
                         <div class="col-lg-8">
-                            <h1>Cost Calculator</h1>
-                            <h5 class="mb-0">Free & Fast Cost Calculator for Web and Mobile Projects</h5>
+                            <h1>Web Portals Cost Calculator</h1>
+                            <h5 class="mb-0">Estimate Your Web Portals Development Cost Instantly</h5>
                         </div>
                     </div>
                 </div>
@@ -110,53 +119,74 @@
         <!-- Services Section -->
         <section id="services" class="services section bg-light">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h3 class="pb-0 mb-0">What are you looking for?</h3>
-            </div><!-- End Section Title -->
 
             <div class="container">
 
-                <div class="row gy-4">
-
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
-                            <div class="icon">
-
-                                <i class="fas fa-desktop"></i>
-                            </div>
-                            <a href="website-cost-calculator.html" class="stretched-link">
-                                <h3>Website</h3>
-                            </a>
-                            <h5>Fast, functional, and fully optimized websites.</h5>
+                <div class="calculator-box">
+                    <h2 class="text-center mb-4">Web Apps Cost Calculator</h2>
+                    <p class="text-center">CRM, HR Portal, Project Management, Customer Support, Dashboard, Job Portal, Client Portal, Event Management etc.</p>
+                    <form id="portalCostForm">
+                        <div class="mb-3">
+                            <label class="form-label">Portal Type</label>
+                            <select class="form-select" id="portalType">
+                                <option value="basic">Employee Portal</option>
+                                <option value="client">Client/Customer Portal</option>
+                                <option value="partner">Partner Portal</option>
+                                <option value="custom">Custom Business Portal</option>
+                            </select>
                         </div>
-                    </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-                                <i class="fas fa-cloud-upload-alt"></i>
-                            </div>
-                            <a href="web-portal-cost-calculator.html" class="stretched-link">
-                                <h3>Web Portal</h3>
-                            </a>
-                            <h5>Customer, E-learning or Community Portals etc. </h5>
+                        <div class="mb-3">
+                            <label class="form-label">Number of Modules</label>
+                            <select class="form-select" id="modules">
+                                <option value="1">Basic (1 Module)</option>
+                                <option value="3">Medium (3 Modules)</option>
+                                <option value="6">Advanced (6+ Modules)</option>
+                            </select>
                         </div>
-                    </div><!-- End Service Item -->
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item position-relative">
-                            <div class="icon">
-
-                                <i class="fas fa-mobile"></i>
-                            </div>
-                            <a href="mobile-app-cost-calculator.html" class="stretched-link">
-                                <h3>Mobile App</h3>
-                            </a>
-                            <h5>iOS, Android or Hybrid Apps</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Authentication Type</label>
+                            <select class="form-select" id="auth">
+                                <option value="0">No Login</option>
+                                <option value="5">Basic Login</option>
+                                <option value="10">Multi-role Login</option>
+                            </select>
                         </div>
-                    </div><!-- End Service Item -->
 
+                        <div class="mb-3">
+                            <label class="form-label">UI Complexity</label>
+                            <select class="form-select" id="ui">
+                                <option value="5">Basic UI</option>
+                                <option value="10">Medium UX</option>
+                                <option value="15">Advanced UX/UI</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">API Integrations</label>
+                            <select class="form-select" id="api">
+                                <option value="0">None</option>
+                                <option value="5">1–2 APIs</option>
+                                <option value="10">3+ APIs</option>
+                            </select>
+                        </div>
+
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="maintenance">
+                            <label class="form-check-label" for="maintenance">
+                                Include Domain & Yearly Maintenance (+$150)
+                            </label>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary" onclick="calculatePortalCost()">Calculate Cost</button>
+                        </div>
+
+                        <div class="mt-4 text-center">
+                            <h4>Total Estimated Cost: <span id="portalTotalCost">$0</span></h4>
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -309,6 +339,27 @@
         script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
         document.head.appendChild(script);
     </script>
+
+    <script>
+        function calculatePortalCost() {
+            const hourlyRate = 30;
+            const hoursByModules = { "1": 20, "3": 60, "6": 120 };
+
+            const modules = document.getElementById('modules').value;
+            const auth = parseInt(document.getElementById('auth').value);
+            const ui = parseInt(document.getElementById('ui').value);
+            const api = parseInt(document.getElementById('api').value);
+            const maintenance = document.getElementById('maintenance').checked;
+
+            let totalHours = hoursByModules[modules] + auth * 2 + ui * 2 + api * 3;
+            let cost = totalHours * hourlyRate;
+
+            if (maintenance) cost += 150;
+
+            document.getElementById('portalTotalCost').innerText = `$${cost}`;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
