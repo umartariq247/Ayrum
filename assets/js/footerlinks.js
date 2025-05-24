@@ -1,8 +1,11 @@
 (function () {
-    const footerContact = '<p>520 Grey Street, Brantford, ON N3S 0K1</p>\
-                        <p>Canada</p>\
+    const emailHtml = '<a href="mailto:ayrumconsulting@gmail.com">ayrumconsulting@gmail.com</a>';
+    const addressHtml = '520 Grey St, Brantford, ON N3S0K1';
+    const phoneHtml = '<a href="tel:+14165789966">+1 416 578 9966</a>';
+    const footerContact = '<p><strong>Address:</strong> 520 Grey Street </p>\
+                        <p>Brantford, ON N3S 0K1, Canada</p>\
                         <p class="mt-3"><strong>Phone:</strong> <span><a href="tel:+14165789966" class="text-white">+1 416 578 9966</a></span></p>\
-                        <p><strong>Email:</strong> <span>info@ayrum.ca</span></p>';
+                        <p><strong>Email:</strong> <span><a href="mailto:ayrumconsulting@gmail.com" class="text-white">ayrumconsulting@gmail.com</a></span></p>';
 
     const facebookLink = "https://www.facebook.com/people/Ayrum-Consulting/61576042030779/";
     const instaLink = "https://www.facebook.com/people/Ayrum-Consulting/61576042030779/";
@@ -74,6 +77,10 @@
     $('.social-links .instagram').attr('href', instaLink);
     $('.social-links .linkedin').attr('href', linkedInLink);
     $('#header #navmenu').html(headerNavMenu);
+
+    $(".emailHtml").html(emailHtml);
+    $(".phoneHtml").html(phoneHtml);
+    $(".addressHtml").html(addressHtml);
 
     /**
    * Mobile nav toggle

@@ -1762,3 +1762,7 @@ section,
     -webkit-backdrop-filter: blur(6px); /* for Safari */
     display: inline-block; /* shrink to content */
 }
+
+#contact p a {
+    color: var(--default-color);
+}

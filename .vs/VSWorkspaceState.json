@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\blogs",
+    "\\blogs\\general"
   ],
-  "SelectedNode": "\\mobile-app-cost-calculator.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
