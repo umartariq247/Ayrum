@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Migrate from SharePoint On-Prem to Microsoft 365</title>
+    <meta name="description" content="Learn why migrating from SharePoint on-premises to Microsoft 365 is critical as end-of-support approaches. Discover benefits like improved security, cloud scalability, AI-powered tools, and modern collaboration.">
+
+    <meta name="keywords" content="SharePoint migration, SharePoint Online, Microsoft 365 migration, SharePoint end of support, migrate SharePoint 2019, cloud migration, M365 services, SharePoint upgrade, Azure integration, SharePoint consulting">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ayrum.ca.com/blogs/m365/Migrate-SharePoint-OnPrem-to-M365.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ7K131LV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1LQ7K131LV');</script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Time to Migrate from SharePoint On-Prem to Microsoft 365",
+          "description": "Is your SharePoint on-premises environment nearing end of support? Learn why now is the right time to migrate to Microsoft 365 and unlock better security, scalability, and modern collaboration tools.",
+          "image": "https://ayrum.ca/assets/img/blogs/m3651.jpg",
+          "telephone": "+1-416-578-9966",
+          "author": {
+            "@type": "Organization",
+            "name": "Ayrum IT Consulting"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Ayrum IT Consulting",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.ayrum.ca/assets/img/ayrum-logo.png"
+            }
+          },
+          "datePublished": "2026-04-23",
+          "dateModified": "2026-04-23",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://ayrum.ca.com/blogs/m365/Migrate-SharePoint-OnPrem-to-M365.html"
+          }
+        }
+    </script>
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon">
+    <link href="/assets/img/favicon.png" rel="icon" type="image/x-icon">
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header sticky-top">
+
+        <div class="ps-3 pe-3 topbar d-flex align-items-center">
+            <div class="container-fluid d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <a href="tel:+14165789966"><i><span><img src="https://flagcdn.com/ca.svg" width="20" alt="Canada Flag" style="margin-right: 5px;"> +1 (416) 578 9966</span></i></a>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div><!-- End Top Bar -->
+
+        <div class="ps-2 pe-2 branding d-flex align-items-center bg-light">
+
+            <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+                <a href="/index.html" class="logo d-flex align-items-center me-auto">
+                    <img src="/assets/img/ayrum-logo.png" alt="">
+                    <img src="/assets/img/site-logo-2.png" alt="">
+                    <!--<h6 class="sitename"><i class="bi bi-brilliance"></i> IT Consulting Inc.</h6>-->
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="">Home<br></a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li class="dropdown">
+                            <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="web-app-development.html">Web App Development</a></li>
+                                <li><a href="mobile-app-development.html">Mobile App Dvelopment</a></li>
+                                <li><a href="websites-webportals.html">Websites & Portals Development </a></li>
+                                <li><a href="microsoft-365.html">Microsoft 365 Services</a></li>
+                                <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#doctors">Blogs</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+
+
+                <a class="cta-btn d-none d-sm-block" href="#contact">Contact Us <i class="bi bi-person ms-1"></i></a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <!-- Page Title -->
+        <div class="page-title dark-background" data-aos="fade" style="background: url('/assets/img/web-apps.jpg?auto=format&fit=crop&w=1600&q=120') no-repeat center center / cover;">
+            <div class="heading">
+                <div class="container">
+                    <div class="row d-flex justify-content-center text-center">
+                        <div class="col-lg-8">
+                            <h1>Why It’s Time to Migrate from SharePoint On-Prem to Microsoft 365</h1>
+                            <h3>Prepare Your Organization for the Future Before Support Ends</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title -->
+
+        <section id="about" class="about section bg-light blog">
+
+            <div class="container">
+
+                <div class="row gy-4 gx-5">
+
+                    <div class="col-lg-9" data-aos="fade-up" data-aos-delay="100">
+
+                        <article class="p-4 p-md-4 mb-4 bg-light rounded-3 border">
+
+                            <header class="mb-4">
+                                <p class="badge bg-white text-dark">3 min read</p>
+                                <h2 class="fw-bold">The Shift from On-Premises to Cloud is No Longer Optional</h2>
+                                <h5 class="text-muted">Why organizations must act now to modernize their SharePoint environments</h5>
+                            </header>
+
+
+
+                            <p>
+                                Many organizations still rely on on-premises SharePoint environments such as SharePoint 2013, 2016, or 2019. While these platforms have served businesses well over the years, the landscape of collaboration, security, and scalability has rapidly evolved. With Microsoft shifting its focus to cloud-first innovation, now is the critical time to plan your migration to Microsoft 365 and SharePoint Online.
+                            </p>
+
+                            <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-delay="100">
+                                <img src="/assets/img/blogs/m3651.jpg" class="img-fluid rounded shadow-lg p-2 bg-white" />
+                            </div>
+
+                            <h4 class="mt-4">1. End of Support is Approaching</h4>
+                            <p>
+                                Microsoft has announced end-of-support timelines for older SharePoint versions. Once support ends, there will be no security patches, bug fixes, or technical assistance. Running unsupported systems exposes your organization to significant security and compliance risks.
+                            </p>
+
+                            <h4 class="mt-4">2. Enhanced Security & Compliance</h4>
+                            <p>
+                                Microsoft 365 offers built-in advanced security features such as threat protection, data loss prevention (DLP), conditional access, and identity management. These capabilities are continuously updated, ensuring your data stays protected against evolving threats.
+                            </p>
+
+                            <h4 class="mt-4">3. Anywhere Access & Modern Collaboration</h4>
+                            <p>
+                                SharePoint Online enables teams to collaborate from anywhere, on any device. Integration with Microsoft Teams, OneDrive, and other M365 services allows seamless document sharing, real-time collaboration, and improved productivity.
+                            </p>
+
+                            <h4 class="mt-4">4. Cost Efficiency & Reduced Maintenance</h4>
+                            <p>
+                                Maintaining on-prem infrastructure involves hardware, licensing, patching, and IT overhead. Migrating to the cloud eliminates these costs and shifts your investment toward innovation rather than maintenance.
+                            </p>
+
+                            <h4 class="mt-4">5. Access to Latest Features & AI Capabilities</h4>
+                            <p>
+                                Microsoft continuously releases new features for Microsoft 365, including AI-powered tools, automation with Power Platform, and intelligent search. On-prem environments simply cannot keep up with this pace of innovation.
+                            </p>
+
+                            <h4 class="mt-4">6. Better Integration with Modern Tools</h4>
+                            <p>
+                                SharePoint Online integrates seamlessly with modern development stacks, APIs, and cloud services like Azure. This enables you to build scalable, secure, and future-ready applications.
+                            </p>
+
+                            <h4 class="mt-4">7. Simplified Disaster Recovery & Backup</h4>
+                            <p>
+                                Cloud platforms provide built-in redundancy, backup, and disaster recovery capabilities. This significantly reduces the risk of data loss compared to traditional on-prem setups.
+                            </p>
+
+                            <h4 class="mt-4">Migration Challenges (And How to Overcome Them)</h4>
+                            <p>
+                                Migrating from on-prem to cloud requires careful planning—especially for large environments with custom solutions, workflows, and legacy integrations. A structured approach including assessment, cleanup, phased migration, and user training ensures a smooth transition.
+                            </p>
+
+                            <h4 class="mt-4">Final Thoughts</h4>
+                            <p>
+                                Delaying migration can increase risks, costs, and technical debt. Organizations that move to Microsoft 365 today benefit from enhanced security, scalability, and access to modern tools that drive productivity and innovation.
+                            </p>
+
+                            <div class="text-white p-4 rounded mt-4 shadow call-to-actions dark-background">
+                                <h4 class="mb-2 text-white">Planning Your SharePoint Migration?</h4>
+                                <p class="mb-0">
+                                    We help organizations migrate from SharePoint on-prem to Microsoft 365 with minimal downtime and maximum efficiency.
+                                </p>
+                                <a href="#contact" class="btn btn-light mt-3"><b>Get a Free Consultation</b></a>
+                                <a href="tel:+14165789966" class="btn btn-light mt-3 ms-2"><b>📞 Call us at +1 (416) 578-9966</b></a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <!-- SIDEBAR -->
+                    <div class="col-lg-3 position-relative align-self-start call-to-actions" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Call Us Section -->
+                        <section class="py-3 dark-background text-white text-center" style="background: url('/assets/img/call-to-action-bg.jpg?auto=format&fit=crop&w=1600&q=120') no-repeat center center / cover;">
+                            <div class="container">
+                                <h5 class="mb-3 tagline">Quality IT Solutions at Affordable Rates</h5>
+                                <h5 class="fw-bold">📞 Call Us Now <br /><a href="tel:+14165789966" class="text-white text-decoration-underline">+1 (416) 578-9966</a></h5>
+                            </div>
+                        </section>
+
+                        <section class="py-3 dark-background text-white text-center mt-3" style="background: url('/assets/img/blogs/blog1.jpg?auto=format&fit=crop&w=1600&q=120') no-repeat center center / cover;">
+                            <div class="container">
+                                <h5 class="mb-3 tagline">Is Your Website Working for You?</h5>
+                                <h5 class="fw-bold"><a href="#contact" class=" fw-bold btn btn-light">Request Free Audit</a></h5>
+                            </div>
+                        </section>
+
+                        <section class="py-3 dark-background text-white text-center mt-3" style="background: url('/assets/img/blogs/blog2.jpg?auto=format&fit=crop&w=1600&q=120') no-repeat center center / cover;">
+                            <div class="container">
+                                <h5 class="mb-3 tagline">Curious About Project Pricing?</h5>
+                                <h5 class="fw-bold"><a href="/cost-calculator.html" class=" fw-bold btn btn-light">Try Our Cost Calculator</a></h5>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+
+                    <img src="/assets/img/ayrum-logo-light.png" style="max-width:140px;" alt="IT Company Brantford Ontario">
+                    <div class="footer-contact pt-3">
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Emerging Technologies</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Ayrum.ca</strong> <span>All Rights Reserved</span></p>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+ 
+
+    <!-- Main JS File -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!--<script src="/assets/js/footerlinks.js?v=<%= Date.now() %>"></script>-->
+    <script>
+        const script = document.createElement('script');
+        script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
+        document.head.appendChild(script);
+    </script>
+</body>
+
+</html>

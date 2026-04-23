@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-
-
-
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Ayrum IT Consulting</title>
@@ -13,7 +10,7 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ7K131LV"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
@@ -23,6 +20,7 @@
         {
           "@context": "https://schema.org",
           "@type": "Organization",
+          "headline": "Professional IT services company based in Ontario, Canada, offering expert solutions in cloud computing, web and mobile app development, Microsoft 365, and IT consulting to help your business grow.",
           "name": "Ayrum IT Consulting",
           "url": "https://www.ayrum.ca",
           "logo": "https://www.ayrum.ca/assets/img/favicon.png"
@@ -45,9 +43,13 @@
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+    </style>
 </head>
 
 <body class="index-page">
@@ -58,7 +60,7 @@
             <div class="container-fluid d-flex justify-content-center justify-content-md-between">
                 <div class="contact-info d-flex align-items-center">
                     <a href="tel:+14165789966"><i><span><img src="https://flagcdn.com/ca.svg" width="20" alt="Canada Flag" style="margin-right: 5px;"> +1 (416) 578 9966</span></i></a>
-                    <!--<i class="bi bi-envelope d-flex align-items-center"><a href="mailto:umar.tariq247@gmail.com">info@ayrum.ca</a></i>-->
+                    <!--<i class="bi bi-envelope d-flex align-items-center"><a href="mailto:u@gmail.com">info@ayrum.ca</a></i>-->
                 </div>
                 <div class="social-links d-none d-md-flex align-items-center">
                     <a href="#" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
@@ -73,7 +75,8 @@
             <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
                 <a href="/index.html" class="logo d-flex align-items-center me-auto">
                     <img src="/assets/img/ayrum-logo.png" alt="">
-                    <h6 class="sitename"><i class="bi bi-brilliance"></i> IT Consulting Inc.</h6>
+                    <img src="/assets/img/site-logo-2.png" alt="">
+                    <!--<h6 class="sitename"><i class="bi bi-brilliance"></i> IT Consulting Inc.</h6>-->
                 </a>
 
                 <nav id="navmenu" class="navmenu">
@@ -90,14 +93,14 @@
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>
                             </ul>
                         </li>
-                        <li><a href="#doctors">Blogs</a></li>
+                        <li><a href="index.html#blogs">Blogs</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav>
 
 
 
-                <a class="cta-btn d-none d-sm-block" href="#contact">Contact Us</a>
+                <a class="cta-btn d-none d-sm-block" href="#contact">Contact Us <i class="bi bi-person ms-1"></i></a>
 
             </div>
 
@@ -110,94 +113,33 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background">
 
-            <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+            <img src="assets/img/home-banner1.png" alt="" data-aos="fade-in">
 
-            <div class="container position-relative">
+            <div class="container position-relative banner-content">
 
-                <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-                    <h2>Welcome to <br />Ayrum IT Consulting</h2>
-                    <!--<p>We are team of talented designers making websites with Bootstrap</p>-->
+                <div class="welcome text-center text-white" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="hero-title text-white">
+                        Engineering the Future of <br>
+                        <span class="gradient-text">Digital Innovation</span>
+                    </h1>
+
+                    <h4 class="hero-subtitle text-center">
+                        We build scalable web, mobile, cloud & AI-powered solutions
+                        that accelerate your business growth.
+                    </h4>
+
+                    <a href="#contact" class="btn btn-glow mt-3 fs-6">Book a Call <i class="bi bi-arrow-right-circle ms-1"></i></a>
                 </div>
-
-                <div class="content row gy-4">
-                    <div class="col-lg-4 d-flex align-items-stretch">
-                        <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-                            <h3>Why Choose Us?</h3>
-                            <p>
-                                At our core, we believe in delivering smart, cost-effective IT solutions without compromising on quality. Whether you're a small business or a growing enterprise, we provide tailored consulting and development services that meet your needs—and your budget.
-                            </p>
-                            <div class="text-center">
-                                <a href="#about" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
-                            </div>
-                        </div>
-                    </div><!-- End Why Box -->
-
-                    <div class="col-lg-8 d-flex align-items-stretch">
-                        <div class="d-flex flex-column justify-content-center">
-                            <div class="row gy-4">
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box bg-light" data-aos="zoom-out" data-aos-delay="300">
-                                        <i class="bi bi-lightbulb"></i>
-                                        <h4>Smart Solutions</h4>
-                                        <p>We craft scalable, efficient, and modern IT systems tailored to your business goals—saving you time and money.</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box bg-light" data-aos="zoom-out" data-aos-delay="400">
-                                        <i class="bi bi-cash-stack"></i>
-                                        <h4>Quality at Low Cost</h4>
-                                        <p>Get top-tier IT consulting and development services at a fraction of the typical cost—without sacrificing quality.</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                                <div class="col-xl-4 d-flex align-items-stretch">
-                                    <div class="icon-box bg-light" data-aos="zoom-out" data-aos-delay="500">
-                                        <i class="bi bi-people"></i>
-                                        <h4>Reliable Partnership</h4>
-                                        <p>We’re more than a service provider—we’re your long-term tech partner, committed to transparency, support, and results.</p>
-                                    </div>
-                                </div><!-- End Icon Box -->
-
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- End  Content-->
 
             </div>
 
         </section><!-- /Hero Section -->
-        <!-- About Section -->
-        <section id="about" class="about section bg-light">
-
-            <div class="container">
-
-                <div class="row gy-4 gx-5">
-
-                    <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/about.png" class="img-fluid" alt="">
-                        <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>-->
-                    </div>
-
-                    <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-                        <h3>About Us</h3>
-                        <p>
-                            At <b>Ayrum</b>, we may be a new name in the market, but we bring over 15 years of hands-on experience delivering high-quality software and IT solutions to clients across industries.
-                        </p>
-                        <p><b>Proudly based in Ontario, Canada</b>, we are founded by seasoned professionals with a mission to combine the reliability of enterprise-grade development with the agility and personal touch of a startup. We specialize in <b>custom web applications, cloud solutions, Microsoft 365 & SharePoint services, and full-stack development</b> that empower businesses to scale and thrive in a digital-first world.</p>
-                        <p>What sets us apart is our commitment to quality, transparency, and client success. Every project we take on is approached with the mindset of a long-term technology partner—not just a vendor. </p>
-                    </div>
-                </div>
-            </div>
-
-        </section><!-- /About Section -->
         <!-- Services Section -->
         <section id="services" class="services section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
+                <h2><strong>Our Services</strong></h2>
                 <h5>We provide end-to-end development services for websites, mobile apps, and Microsoft 365 solutions. From planning to deployment, we deliver tailored, high-quality technology that fits your business.</h5>
             </div><!-- End Section Title -->
 
@@ -297,100 +239,262 @@
             </div>
 
         </section><!-- /Services Section -->
-        <!-- Faq Section -->
-        <section id="faq" class="faq section bg-light">
+        <!-- Hero Section -->
+        <section id="about" class="hero section light-background text-start section-glow">
+            <div class="container position-relative pb-2">
+                <!-- Section Title -->
+                <div class="container section-title pb-2" data-aos="fade-up">
+                    <h2><strong>About Us</strong></h2>
+                    <h5>
+                        At <b>Ayrum</b>, we bring over 20 years of hands-on experience delivering high-quality software and IT solutions to clients across industries.
+                        Proudly <b>based in Ontario, Canada</b>, we are founded by seasoned professionals with a mission to combine the reliability of enterprise-grade development with the agility and personal touch of a startup. We specialize in <b>custom web applications, cloud solutions, Microsoft 365 & SharePoint services, and mobile app development</b> that empower businesses to scale and thrive in a digital-first world.
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Frequently Asked Questions</h2>
-                <h5>Whether you're curious about our services, pricing, or how we work with clients across the globe, this FAQ section covers the most common questions we receive. We're here to make your IT journey simple, transparent, and affordable.</h5>
-            </div><!-- End Section Title -->
+                        What sets us apart is our commitment to quality, transparency, and client success. Every project we take on is approached with the mindset of a long-term technology partner—not just a vendor.
+                    </h5>
+                </div><!-- End Section Title -->
 
-            <div class="container">
-
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-                        <div class="faq-container">
-
-                            <div class="faq-item faq-active">
-                                <h3>Who are you, and where are you based?</h3>
-                                <div class="faq-content">
-                                    <p>We are a Canadian-based IT consulting company specializing in custom software development, cloud solutions, and Microsoft technologies including SharePoint, Power Platform, and .NET. Our team is committed to delivering secure, scalable, and innovative digital solutions for businesses across industries.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>What services do you offer?</h3>
-                                <div class="faq-content">
-                                    <p>We offer a range of IT services including full-stack web development, mobile app development, cloud integration (Azure, AWS), SharePoint and Microsoft 365 solutions, IT strategy consulting, and custom application development.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Do you offer affordable website development for small businesses or startups?</h3>
-                                <div class="faq-content">
-                                    <p>Yes! We believe every business deserves a professional online presence—no matter the size or budget. Our simple website packages start at just $200 CAD, perfect for startups, personal portfolios, and small businesses looking for clean, responsive websites. We also offer flexible upgrades as your business grows.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Do you work with small businesses or only large enterprises?</h3>
-                                <div class="faq-content">
-                                    <p>We work with clients of all sizes—from startups and small businesses to large enterprises—providing tailored solutions that fit their unique needs and budgets.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>How do you ensure data security and compliance?</h3>
-                                <div class="faq-content">
-                                    <p>We follow industry best practices and use secure development lifecycle (SDL) approaches. We also ensure compliance with privacy and security standards such as GDPR, HIPAA, and ISO, depending on the client's requirements.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item">
-                                <h3>Can you work with clients outside of Canada?</h3>
-                                <div class="faq-content">
-                                    <p>Yes. While we’re based in Canada, we serve clients globally through virtual collaboration, secure communication channels, and cloud-based project management tools.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-                            <div class="faq-item">
-                                <h3>What technologies do you specialize in?</h3>
-                                <div class="faq-content">
-                                    <p>We specialize in Microsoft technologies such as .NET Core, C#, Azure, SharePoint, Power Apps, Power Automate, and SQL Server. We also work with modern front-end frameworks like React and Angular, and mobile platforms like Flutter and Xamarin.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
+                <div class="content row ">
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+                            <h3>Why Choose Us?</h3>
+                            <p>
+                                At our core, we believe in delivering smart, cost-effective IT solutions without compromising on quality. Whether you're a small business or a growing enterprise, we provide tailored consulting and development services that meet your needs—and your budget.
+                            </p>
+                            <div class="text-center">
+                                <a href="#contact" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
                             </div>
-                            <div class="faq-item">
-                                <h3>How can I get started with your services?</h3>
-                                <div class="faq-content">
-                                    <p>Simply contact us through our website’s contact form or email us directly. We’ll schedule a free consultation to discuss your needs and how we can help.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
                         </div>
+                    </div><!-- End Why Box -->
 
-                    </div><!-- End Faq Column-->
+                    <div class="col-lg-8 d-flex align-items-stretch">
+                        <div class="d-flex flex-column justify-content-center">
+                            <div class="row gy-4">
 
-                </div>
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                                        <i class="bi bi-lightbulb"></i>
+                                        <h4>Smart Solutions</h4>
+                                        <p class="text-dark">We craft scalable, efficient, and modern IT systems tailored to your business goals—saving you time and money.</p>
+                                    </div>
+                                </div><!-- End Icon Box -->
+
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                                        <i class="bi bi-cash-stack"></i>
+                                        <h4>Quality at Low Cost</h4>
+                                        <p class="text-dark">Get top-tier IT consulting and development services at a fraction of the typical cost—without sacrificing quality.</p>
+                                    </div>
+                                </div><!-- End Icon Box -->
+
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                                        <i class="bi bi-people"></i>
+                                        <h4>Reliable Partnership</h4>
+                                        <p class="text-dark">We’re more than a service provider—we’re your long-term tech partner, committed to transparency, support, and results.</p>
+                                    </div>
+                                </div><!-- End Icon Box -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End  Content-->
 
             </div>
 
-        </section><!-- /Faq Section -->
+        </section><!-- /Hero Section -->
+
+
+        <section class="py-5 bg-light" id="blogs">
+            <div class="container">
+
+                <!-- Header -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-white"><strong class="fw-bold">Latest Blogs</strong></h2>
+                    <p class="text-light">Insights, tutorials, and updates from our team</p>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper blogSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide -->
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <img src="/assets/img/blogs/ai-tech2.jpg" class="blog-img" />
+                                <div class="p-3">
+                                    <span class="badge bg-primary mb-2">AI</span>
+                                    <h5 class="fw-bold">
+                                        Do We Still Need Developers in the AI Era?
+                                    </h5>
+                                    <p class="text-muted small">
+                                        Why Skilled Developers Are More Important Than Ever in the Age of AI
+                                    </p>
+                                    <a href="/blogs/ai/Will-AI-Replace-Developers.html" class="read-more">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <img src="/assets/img/blogs/m3651.jpg" class="blog-img" />
+                                <div class="p-3">
+                                    <span class="badge bg-primary mb-2">Cloud</span>
+                                    <h5 class="fw-bold">Why It’s Time to Migrate from SharePoint On-Prem to Microsoft 365</h5>
+                                    <p class="text-muted small">Why organizations must act now to modernize their SharePoint environments</p>
+                                    <a href="/blogs/m365/Migrate-SharePoint-OnPrem-to-M365.html" class="read-more">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <img src="/assets/img/blogs/security1.jpg" class="blog-img" />
+                                <div class="p-3">
+                                    <span class="badge bg-primary mb-2">Security</span>
+                                    <h5 class="fw-bold">
+                                        Why Web Application Security Matters More Than Ever
+                                    </h5>
+                                    <p class="text-muted small">Protect Your Applications, Users, and Business from Modern Threats</p>
+                                    <a href="/blogs/web/Web-App-Security-Best-Practices.html" class="read-more">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <img src="/assets/img/blogs/blog3.jpg" class="blog-img" />
+                                <div class="p-3">
+                                    <span class="badge bg-primary mb-2">Websites</span>
+                                    <h5 class="fw-bold">How Much Does a Website Really Cost in 2026?</h5>
+                                    <p class="text-muted small">A Simple Guide to Website Costs for Small Businesses and Personal Projects</p>
+                                    <a href="/blogs/general/How-Much-Does-a-Website-Really-Cost-in-2026.html" class="read-more">Read More →</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination mt-3"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section py-5">
+
+            <div class="container">
+
+                <!-- Title -->
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Frequently Asked Questions</h2>
+                    <p class="text-muted mx-auto" style="max-width: 700px;">
+                        Everything you need to know about our services, pricing, and how we work with clients globally.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- LEFT SIDE (Categories / Info Panel) -->
+                    <div class="col-lg-4">
+                        <div class="faq-info-card p-4">
+                            <h5 class="fw-bold mb-3">Quick Help</h5>
+                            <p class="text-muted small">
+                                Can’t find your answer? Contact us anytime and we’ll respond quickly.
+                            </p>
+
+                            <ul class="faq-tags">
+                                <li>💻 Development</li>
+                                <li>☁️ Cloud Solutions</li>
+                                <li>🔐 Security</li>
+                                <li>💰 Pricing</li>
+                            </ul>
+
+                            <hr>
+
+                            <p class="small text-muted mb-0">
+                                <b>We respond within 24 hours globally.</b>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT SIDE (Accordion) -->
+                    <div class="col-lg-8">
+
+                        <div class="faq-accordion">
+
+                            <!-- Item -->
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Who are you, and where are you based?
+                                </button>
+                                <div class="faq-answer">
+                                    We are a Canadian-based IT consulting company specializing in custom software, cloud solutions, and Microsoft technologies.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What services do you offer?
+                                </button>
+                                <div class="faq-answer">
+                                    Full-stack development, mobile apps, Azure/AWS cloud, SharePoint, Power Platform, and IT consulting.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Do you offer affordable websites for startups?
+                                </button>
+                                <div class="faq-answer">
+                                    Yes — starting from $200 CAD for simple professional websites.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    Can you work with international clients?
+                                </button>
+                                <div class="faq-answer">
+                                    Yes, we work globally using secure cloud collaboration tools.
+                                </div>
+                            </div>
+
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    What technologies do you specialize in?
+                                </button>
+                                <div class="faq-answer">
+                                    We specialize in modern full-stack and cloud solutions built on the latest Microsoft ecosystem, including .NET Core, C#, Azure, SharePoint, Microsoft 365 services, Power Apps, and Power Automate, with strong expertise in SQL Server. We also leverage contemporary front-end frameworks such as React and Angular, along with mobile development platforms like Flutter and Xamarin, while increasingly integrating AI-enabled capabilities to deliver smarter, more efficient business solutions.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- /Faq Section -->
         <!-- Contact Section -->
         <section id="contact" class="contact section bg-light">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Contact Us</h2>
+                <h2><b>Contact Us</b></h2>
                 <h5>Get in touch with us for a free consultation or to learn how we can help with your next IT project.</h5>
             </div><!-- End Section Title -->
 
@@ -526,6 +630,47 @@
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".blogSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 25,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1200: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+
+                item.classList.toggle('active');
+            });
+        });
+    </script>
     <!--<script src="/assets/js/footerlinks.js"></script>-->
     <script>
         const script = document.createElement('script');

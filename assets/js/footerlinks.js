@@ -23,7 +23,7 @@
                                 <li><a href="/microsoft-365.html">Microsoft 365 Services</a></li>\
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
                             </ul>\
-                        <li><a href="/index.html">Blogs</a></li>\
+                        <li><a href="/index.html#blogs">Blogs</a></li>\
                         <li><a href="/cost-calculator.html">Cost Calculator</a></li>\
                     </ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>';
 
@@ -43,10 +43,10 @@
             { text: 'Cloud Solutions & Migration', url: '/cloud-solutions.html' },
         ],
         resources: [
-            { text: 'Blogs', url: '#' },
-            { text: 'About', url: '#' },
+            { text: 'Blogs', url: '/index.html#blogs' },
+            { text: 'About', url: '/index.html#about' },
             { text: 'Case Studies', url: '#' },
-            { text: 'Cost Calculator', url: '#' },
+            { text: 'Cost Calculator', url: '/cost-calculator.html' },
             { text: 'Careers', url: '#' },
         ],
         technologies: [
