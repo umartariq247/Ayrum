@@ -23,7 +23,7 @@
                                 <li><a href="/microsoft-365.html">Microsoft 365 Services</a></li>\
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
                             </ul>\
-                        <li><a href="/Blogs.html">Blogs</a></li>\
+                        <li><a href="/blogs.html">Blogs</a></li>\
                         <li><a href="/cost-calculator.html">Cost Calculator</a></li>\
                     </ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>';
 
