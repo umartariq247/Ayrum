@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Cost Calculator - Ayrum Consulting</title>
+    <meta name="description" content="Quickly estimate the cost of your IT services with our easy-to-use cost calculator. Get transparent pricing for custom web, mobile, and cloud solutions.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LQ7K131LV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1LQ7K131LV');
+    </script>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/favicon.png" rel="icon" type="image/x-icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .blog-card {
+            background-color: white; /* light dark grey */
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+        }
+        .blog-card .card-text {
+            color: #d1d5db; /* softer text */
+        }
+
+        .blog-card .card-title {
+            color: #ffffff;
+        }
+
+        .blog-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+
+    </style>
+
+</head>
+
+<body class="starter-page-page">
+
+    <header id="header" class="header sticky-top">
+
+        <div class="ps-3 pe-3 topbar d-flex align-items-center">
+            <div class="container-fluid d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <a href="tel:+14165789966"><i><span><img src="https://flagcdn.com/ca.svg" width="20" alt="Canada Flag" style="margin-right: 5px;"> +1 (416) 578 9966</span></i></a>
+                    <!--<i class="bi bi-envelope d-flex align-items-center"><a href="mailto:u@gmail.com">info@ayrum.ca</a></i>-->
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a href="#" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div><!-- End Top Bar -->
+
+        <div class="ps-2 pe-2 branding d-flex align-items-center bg-light">
+
+            <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+                <a href="/index.html" class="logo d-flex align-items-center me-auto">
+                    <img src="/assets/img/ayrum-logo.png" alt="">
+                    <img src="/assets/img/site-logo-2.png" alt="">
+                    <!--<h6 class="sitename"><i class="bi bi-brilliance"></i> IT Consulting Inc.</h6>-->
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="">Home<br></a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li class="dropdown">
+                            <a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                            <ul>
+                                <li><a href="web-app-development.html">Web App Development</a></li>
+                                <li><a href="mobile-app-development.html">Mobile App Dvelopment</a></li>
+                                <li><a href="websites-webportals.html">Websites & Portals Development </a></li>
+                                <li><a href="microsoft-365.html">Microsoft 365 Services</a></li>
+                                <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#blogs">Blogs</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+
+
+                <a class="cta-btn d-none d-sm-block" href="#contact">Contact Us <i class="bi bi-person ms-1"></i></a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+
+        <!--blogs-->
+
+        <section class="py-5 bg-dark text-light" id="blogs">
+            <div class="container">
+
+                <!-- Heading -->
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold text-light">Our Blogs</h2>
+                    <p class="text-secondary gradient-text">Insights, trends, and ideas shaping the future of web, mobile, cloud, and AI.</p>
+                </div>
+
+                <!-- Search -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-6">
+                        <input type="text" id="blogSearch"
+                               class="form-control form-control-SM bg-secondary text-white border-0"
+                               placeholder="Search blogs (AI, Mobile, Web App, Security, M365 etc.)">
+                    </div>
+                </div>
+
+                <!-- Grid -->
+                <div class="row g-4" id="blogGrid">
+
+                    <!-- Blog Card -->
+                    <div class="col-md-6 col-lg-4 blog-item"
+                         data-title="AI in Web Development"
+                         data-tags="ai web app">
+
+                        <div class="card blog-card text-light h-100 border-0 shadow-sm">
+
+                            <!-- Thumbnail -->
+                            <img src="/assets/img/blogs/ai-tech2.jpg"
+                                 class="card-img-top"
+                                 alt="AI">
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h5 class="fw-bold">Do We Still Need Developers in the AI Era?</h5>
+                                <p class="card-text flex-grow-1 text-secondary">
+                                    Why Skilled Developers Are More Important Than Ever in the Age of AI
+                                </p>
+
+                                <!-- Tags -->
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Artificial Intelligence</span>
+                                    <!--<span class="badge bg-primary">Web App</span>-->
+                                </div>
+
+                                <!-- Button -->
+                                <a href="/blogs/ai/Will-AI-Replace-Developers.html" class="btn btn-outline-dark btn-sm mt-auto">
+                                    Read More →
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card -->
+                    <div class="col-md-6 col-lg-4 blog-item"
+                         data-title="SharePoint On-Prem to Microsoft 365"
+                         data-tags="Cloud M365">
+
+                        <div class="card blog-card text-light h-100 border-0 shadow-sm">
+
+                            <!-- Thumbnail -->
+                            <img src="/assets/img/blogs/m3651.jpg"
+                                 class="card-img-top"
+                                 alt="Cloud M365">
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h5 class="fw-bold">Why It’s Time to Migrate from SharePoint On-Prem to Microsoft 365</h5>
+                                <p class="card-text flex-grow-1 text-secondary">
+                                    Why organizations must act now to modernize their SharePoint environments
+                                </p>
+
+                                <!-- Tags -->
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Cloud</span>
+                                    <span class="badge bg-primary">M365</span>
+                                </div>
+
+                                <!-- Button -->
+                                <a href="/blogs/m365/Migrate-SharePoint-OnPrem-to-M365.html" class="btn btn-outline-dark btn-sm mt-auto">
+                                    Read More →
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card -->
+                    <div class="col-md-6 col-lg-4 blog-item"
+                         data-title="Web Application Security"
+                         data-tags="Security Web Apps">
+
+                        <div class="card blog-card text-light h-100 border-0 shadow-sm">
+
+                            <!-- Thumbnail -->
+                            <img src="/assets/img/blogs/security1.jpg"
+                                 class="card-img-top"
+                                 alt="Security Web">
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h5 class="fw-bold">Why Web Application Security Matters More Than Ever</h5>
+                                <p class="card-text flex-grow-1 text-secondary">
+                                    Protect Your Applications, Users, and Business from Modern Threats
+                                </p>
+
+                                <!-- Tags -->
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Security</span>
+                                    <span class="badge bg-primary">Web Apps</span>
+                                </div>
+
+                                <!-- Button -->
+                                <a href="blogs/web/Web-App-Security-Best-Practices.html" class="btn btn-outline-dark btn-sm mt-auto">
+                                    Read More →
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card -->
+                    <div class="col-md-6 col-lg-4 blog-item"
+                         data-title="Websites Cost"
+                         data-tags="Websites">
+
+                        <div class="card blog-card text-light h-100 border-0 shadow-sm">
+
+                            <!-- Thumbnail -->
+                            <img src="/assets/img/blogs/blog3.jpg"
+                                 class="card-img-top"
+                                 alt="Security Web">
+
+                            <div class="card-body d-flex flex-column">
+
+                                <h5 class="fw-bold">How Much Does a Website Really Cost in 2026?</h5>
+                                <p class="card-text flex-grow-1 text-secondary">
+                                    A Simple Guide to Website Costs for Small Businesses and Personal Projects
+                                </p>
+
+                                <!-- Tags -->
+                                <div class="mb-3">
+                                    <span class="badge bg-primary">Websites</span>
+                                    <span class="badge bg-primary">Web Apps</span>
+                                </div>
+
+                                <!-- Button -->
+                                <a href="/blogs/general/How-Much-Does-a-Website-Really-Cost-in-2026.html" class="btn btn-outline-dark btn-sm mt-auto">
+                                    Read More →
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--blogs end-->
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-light">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Contact Us</h2>
+                <h5>Get in touch with us for a free consultation or to learn how we can help with your next IT project.</h5>
+            </div><!-- End Section Title -->
+
+            <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+                <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.8847212753503!2d-80.228474924312!3d43.14894997113057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c642e9a7cb447%3A0x6606c98071267fe7!2s520%20Grey%20St%2C%20Brantford%2C%20ON%20N3S%200K1!5e0!3m2!1sen!2sca!4v1746803910444!5m2!1sen!2sca" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div><!-- End Google Maps -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-4">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p class="addressHtml">520 Grey St, Brantford, ON N3S0K1</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p class="phoneHtml">+1 416 578 9966</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p class="emailHtml">info@ayrum.ca</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                    </div>
+
+                    <div class="col-lg-8">
+                        <form action="https://formspree.io/f/xwpoqbyl" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button type="submit">Send Message</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div><!-- End Contact Form -->
+
+                </div>
+
+            </div>
+
+        </section><!-- /Contact Section -->
+
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+
+                    <img src="assets/img/ayrum-logo-light.png" style="max-width:140px;" alt="">
+                    <div class="footer-contact pt-3">
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href="" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Emerging Technologies</h4>
+                    <ul>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">Ayrum.ca</strong> <span>All Rights Reserved</span></p>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/aos/aos.js"></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+    <script id="fixSearch">
+        document.getElementById('blogSearch').addEventListener('keyup', function () {
+            let value = this.value.toLowerCase().trim();
+            let items = document.querySelectorAll('.blog-item');
+
+            items.forEach(item => {
+
+                // 1. Title from UI
+                let title = item.querySelector('h5')?.innerText.toLowerCase() || "";
+
+                // 2. Description (optional but useful)
+                let desc = item.querySelector('.card-text')?.innerText.toLowerCase() || "";
+
+                // 3. Tags from badges
+                let tags = Array.from(item.querySelectorAll('.badge'))
+                    .map(b => b.innerText.toLowerCase())
+                    .join(" ");
+
+                // 4. Fallback (data attributes if present)
+                let dataTitle = item.dataset.title?.toLowerCase() || "";
+                let dataTags = item.dataset.tags?.toLowerCase() || "";
+
+                // Combine everything
+                let content = `${title} ${desc} ${tags} ${dataTitle} ${dataTags}`;
+
+                if (content.includes(value)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+    </script>
+    <script>
+        const script = document.createElement('script');
+        script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
+        document.head.appendChild(script);
+    </script>
+
+</body>
+
+</html>

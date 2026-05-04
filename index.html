@@ -49,6 +49,16 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <style>
+        #bannerImage {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            display: block;
+            width: 100%;
+        }
+
+        .fade-out {
+            opacity: 0;
+        }
     </style>
 </head>
 
@@ -113,19 +123,18 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section light-background">
 
-            <img src="assets/img/home-banner1.png" alt="" data-aos="fade-in">
+            <img id="bannerImage" src="assets/img/home-banner1.png" alt="" data-aos="fade-in">
 
             <div class="container position-relative banner-content">
 
                 <div class="welcome text-center text-white" data-aos="fade-up" data-aos-delay="100">
-                    <h1 class="hero-title text-white">
+                    <h1 id="banner-heading1" class="hero-title text-white">
                         Engineering the Future of <br>
                         <span class="gradient-text">Digital Innovation</span>
                     </h1>
 
-                    <h4 class="hero-subtitle text-center">
-                        We build scalable web, mobile, cloud & AI-powered solutions
-                        that accelerate your business growth.
+                    <h4 id="banner-heading2" class="hero-subtitle text-center">
+                        <span class="text-white hero-text-bg">We build scalable web, mobile, cloud & AI-powered solutions that accelerate your business growth.</span>
                     </h4>
 
                     <a href="#contact" class="btn btn-glow mt-3 fs-6">Book a Call <i class="bi bi-arrow-right-circle ms-1"></i></a>
@@ -676,6 +685,48 @@
         const script = document.createElement('script');
         script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
         document.head.appendChild(script);
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const heading = document.getElementById("banner-heading1");
+            const heading2 = document.getElementById("banner-heading2");
+            const img = document.getElementById("bannerImage");
+
+            const images = [
+                "assets/img/home-banner1.png",
+                "assets/img/home-banner2.png"
+            ];
+
+            let index = 0;
+
+            setInterval(() => {
+
+                // fade out
+                img.classList.add("fade-out");
+
+                setTimeout(() => {
+                    // switch image
+                    index = index === 0 ? 1 : 0;
+                    img.src = images[index];
+                    // change heading
+                    if (index === 0) {
+                        heading.innerHTML = 'Engineering the Future of <br> <span class="gradient-text">Digital Innovation</span>';
+                        heading2.innerHTML = '<span class="text-white hero-text-bg">We build scalable web, mobile, cloud & AI-powered solutions that accelerate your business growth.</span>';
+                    } else {
+                        heading.innerHTML = 'Empowering Human Potential with <br> <span class="gradient-text">Artificial Intelligence Solutions</span>';
+                        heading2.innerHTML = '<span class="text-white hero-text-bg">We build scalable web, mobile, cloud & intelligent AI solutions that power smarter business growth.</span>';
+                    }
+
+                    // fade in
+                    img.classList.remove("fade-out");
+                }, 1000); // MUST match CSS duration
+
+            }, 7000);
+
+        });
+        const preload = new Image();
+        preload.src = "assets/img/home-banner2.png";
     </script>
 </body>
 
