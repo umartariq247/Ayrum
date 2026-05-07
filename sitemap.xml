@@ -17,6 +17,11 @@
   <lastmod>2025-05-16T20:25:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+  <url>
+    <loc>https://www.ayrum.ca/services.html</loc>
+    <lastmod>2026-05-7T20:25:40+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 <url>
   <loc>https://www.ayrum.ca/web-app-development.html</loc>
   <lastmod>2025-05-16T20:25:40+00:00</lastmod>
@@ -77,5 +82,24 @@
     <lastmod>2025-05-21T20:25:40+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-
+  <url>
+    <loc>https://www.ayrum.ca/blogs/general/How-Much-Does-a-Website-Really-Cost-in-2026.html</loc>
+    <lastmod>2026-05-05T20:25:40+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ayrum.ca/blogs/ai/Will-AI-Replace-Developers.html</loc>
+    <lastmod>2026-05-07T20:25:40+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ayrum.ca/blogs/m365/Migrate-SharePoint-OnPrem-to-M365.html</loc>
+    <lastmod>2026-05-07T20:25:40+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.ayrum.ca/blogs/web/Web-App-Security-Best-Practices.html</loc>
+    <lastmod>2026-05-07T20:25:40+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 </urlset>
