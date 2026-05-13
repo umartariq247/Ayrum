@@ -20,7 +20,9 @@
                                 <li><a href="/web-app-development.html">Web App Development</a></li>\
                                 <li><a href="/mobile-app-development.html">Mobile App Dvelopment</a></li>\
                                 <li><a href="/websites-webportals.html">Websites & Portals Development </a></li>\
+                                <li><a href="/ai-ml-services.html">AI & ML Services </a></li>\
                                 <li><a href="/microsoft-365.html">Microsoft 365 Services</a></li>\
+                                <li><a href="/microsoft-365.html">SharePoint & Power Apps Services</a></li>\
                                 <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
                             </ul>\
                         <li><a href="/blogs.html">Blogs</a></li>\
@@ -31,7 +33,7 @@
         usefulLinks: [
             { text: 'Home', url: '/index.html' },
             { text: 'About us', url: '/index.html#about' },
-            { text: 'Services', url: '/index.html#services' },
+            { text: 'Services', url: '/services.html' },
             { text: 'Terms of service', url: '/terms-of-service.html' },
             { text: 'Privacy policy', url: '/privacy-policy.html' },
         ],
@@ -43,17 +45,17 @@
             { text: 'Cloud Solutions & Migration', url: '/cloud-solutions.html' },
         ],
         resources: [
-            { text: 'Blogs', url: '/index.html#blogs' },
+            { text: 'Blogs', url: '/blogs.html' },
             { text: 'About', url: '/index.html#about' },
             { text: 'Case Studies', url: '#' },
             { text: 'Cost Calculator', url: '/cost-calculator.html' },
             { text: 'Careers', url: '#' },
         ],
         technologies: [
-            { text: 'AI/ML', url: '#' },
+            { text: 'AI/ML', url: '/ai-ml-services.html' },
             { text: 'Internet of Things (IoT)', url: '#' },
             { text: 'Cloud-Native Development', url: '#' },
-            { text: 'Power Platform', url: '#' },
+            { text: 'Power Platform', url: '/microsoft-365.html' },
             { text: 'Copilot', url: '#' },
         ]
     };

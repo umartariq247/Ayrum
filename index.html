@@ -214,17 +214,30 @@
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative service-card">
+
                             <div class="icon">
-                                <i class="fas fa-headset"></i>
+                                <i class="fas fa-brain"></i>
                             </div>
+
                             <a href="#" class="stretched-link">
-                                <h3>Technical Support</h3>
+                                <h3>AI & Machine Learning Solutions</h3>
                             </a>
-                            <h5>Maintenance & Troubleshooting</h5>
-                            <p class="mb-3">From bug fixes to system upgrades, we offer reliable support that keeps your technology running smoothly.</p>
-                            <a href="#" class="stretched-link pt-3">Learn More <i class="bi bi-chevron-right"></i></a>
+
+                            <h5>Intelligent Automation & Insights</h5>
+
+                            <p class="mb-3">
+                                We design AI-powered solutions that automate processes,
+                                predict outcomes, and unlock actionable insights from data.
+                            </p>
+
+                            <a href="ai-ml-services.html" class="stretched-link pt-3">
+                                Learn More <i class="bi bi-chevron-right"></i>
+                            </a>
+
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
+    
+    <!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="service-item position-relative service-card">
@@ -717,6 +730,7 @@
 
             const images = [
                 "assets/img/home-banner1.png",
+                "assets/img/home-banner3.png",
                 "assets/img/home-banner2.png"
             ];
 
@@ -729,16 +743,21 @@
 
                 setTimeout(() => {
                     // switch image
-                    index = index === 0 ? 1 : 0;
+                    // switch to next image (loop 0 → 1 → 2 → 0)
+                    index = (index + 1) % images.length;
                     img.src = images[index];
                     // change heading
                     if (index === 0) {
                         heading.innerHTML = 'Engineering the Future of <br> <span class="gradient-text">Digital Innovation</span>';
                         heading2.innerHTML = '<span class="text-white hero-text-bg">We build scalable web, mobile, cloud & AI-powered solutions that accelerate your business growth.</span>';
-                    } else {
+                    } else if (index === 1) {
+                        heading.innerHTML = 'Driving Intelligence with <br> <span class="gradient-text">AI & Automation</span>';
+                        heading2.innerHTML = '<span class="text-white hero-text-bg">We help businesses unlock insights and efficiency through AI-driven applications and smart automation.</span>';
+                    } else if (index === 2) {
                         heading.innerHTML = 'Empowering Human Potential with <br> <span class="gradient-text">Artificial Intelligence Solutions</span>';
                         heading2.innerHTML = '<span class="text-white hero-text-bg">We build scalable web, mobile, cloud & intelligent AI solutions that power smarter business growth.</span>';
                     }
+                    
 
                     // fade in
                     img.classList.remove("fade-out");
