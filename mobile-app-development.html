@@ -15,6 +15,7 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
+
         gtag('config', 'G-1LQ7K131LV');
     </script>
 
@@ -46,8 +47,9 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css?v=1.1" rel="stylesheet">
 
+    
 </head>
 
 <body class="starter-page-page">
@@ -135,53 +137,91 @@
 
                 <div class="row gy-4">
 
+                    <!-- iOS -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
-                            <div class="icon">
 
+                        <div class="service-item position-relative service-card"
+                             data-service="ios">
+
+                            <div class="icon">
                                 <i class="bi bi-phone-fill"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Native iOS Apps</h3>
-                            </a>
-                            <h5>Optimized for Apple Devices</h5>
-                            <p class="mb-3">Crafted specifically for iPhones and iPads, delivering smooth performance and a seamless user experience.</p>
-                        </div>
-                    </div><!-- End Service Item -->
 
+                            <h3>Native iOS Apps</h3>
+
+                            <h5>Optimized for Apple Devices</h5>
+
+                            <p class="mb-3">
+                                Crafted specifically for iPhones and iPads,
+                                delivering smooth performance and seamless user experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Android -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
+
+                        <div class="service-item position-relative service-card"
+                             data-service="android">
+
                             <div class="icon">
                                 <i class="bi bi-device-hdd-fill"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Native Android Apps</h3>
-                            </a>
+
+                            <h3>Native Android Apps</h3>
+
                             <h5>Powerful Android Experiences</h5>
-                            <p class="mb-3"> Built using Android's native technologies to ensure speed, reliability, and full platform integration.</p>
+
+                            <p class="mb-3">
+                                Built using Android native technologies to ensure
+                                speed, reliability, and platform integration.
+                            </p>
+
                         </div>
-                    </div><!-- End Service Item -->
 
+                    </div>
 
+                    <!-- Hybrid -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
 
-                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item position-relative">
+                        <div class="service-item position-relative service-card"
+                             data-service="hybrid">
+
                             <div class="icon">
-
                                 <i class="bi bi-layers"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Hybrid Apps</h3>
-                            </a>
+
+                            <h3>Hybrid Apps</h3>
+
                             <h5>Cross-Platform, One Codebase</h5>
-                            <p class="mb-3"> Single-codebase apps for both platforms using Flutter, React Native, or Ionic—cost-effective and fast to deploy.</p>
+
+                            <p class="mb-3">
+                                Single-codebase apps using Flutter, React Native,
+                                or Ionic for faster and cost-effective delivery.
+                            </p>
+
                         </div>
-                    </div><!-- End Service Item -->
 
-
+                    </div>
 
                 </div>
 
+                <div class="row mt-5">
+
+                    <div class="col-12">
+
+                        <div id="service-details"
+                             class="service-details-box d-none">
+
+                            <div id="service-content"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </section><!-- /Services Section -->
@@ -487,7 +527,110 @@
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
-    <!--<script src="/assets/js/footerlinks.js?v=<%= Date.now() %>"></script>-->
+
+    <script>
+
+        const serviceData = {
+
+            ios: `
+            <h3>Native iOS App Development</h3>
+
+            <p>
+                We develop premium-quality iOS applications for
+                iPhone and iPad using Swift and modern Apple technologies.
+            </p>
+
+            <ul>
+                <li>Swift & SwiftUI Development</li>
+                <li>Apple Pay Integration</li>
+                <li>Push Notifications</li>
+                <li>App Store Deployment</li>
+                <li>Advanced Security Implementation</li>
+            </ul>
+
+            <p>
+                Ideal for businesses looking to deliver
+                high-performance applications to Apple users.
+            </p>
+        `,
+
+            android: `
+            <h3>Native Android App Development</h3>
+
+            <p>
+                We build scalable Android applications using
+                Kotlin and Android SDK technologies.
+            </p>
+
+            <ul>
+                <li>Kotlin Development</li>
+                <li>Material UI Design</li>
+                <li>Google Services Integration</li>
+                <li>Play Store Publishing</li>
+                <li>Enterprise Android Solutions</li>
+            </ul>
+
+            <p>
+                Perfect for businesses targeting large Android audiences
+                with customized platform capabilities.
+            </p>
+        `,
+
+            hybrid: `
+            <h3>Hybrid Mobile App Development</h3>
+
+            <p>
+                Build once and deploy on both iOS and Android
+                using React Native, Flutter, or Ionic.
+            </p>
+
+            <ul>
+                <li>Single Shared Codebase</li>
+                <li>Reduced Development Cost</li>
+                <li>Faster Time-to-Market</li>
+                <li>Cross-Platform Compatibility</li>
+                <li>Cloud API Integration</li>
+            </ul>
+
+            <p>
+                Best suited for startups and businesses
+                looking for cost-effective mobile solutions.
+            </p>
+        `
+        };
+
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+
+            card.addEventListener('click', function () {
+
+                const service = this.dataset.service;
+
+                document.getElementById('service-content').innerHTML =
+                    serviceData[service];
+
+                const detailsBox =
+                    document.getElementById('service-details');
+
+                detailsBox.classList.remove('d-none');
+
+                cards.forEach(c =>
+                    c.classList.remove('active-service'));
+
+                this.classList.add('active-service');
+
+                detailsBox.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+            });
+
+        });
+
+    </script>
+
     <script>
         const script = document.createElement('script');
         script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster

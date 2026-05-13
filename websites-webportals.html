@@ -45,7 +45,7 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css?v=1.1" rel="stylesheet">
 
 </head>
 
@@ -132,40 +132,34 @@
                 <div class="row gy-4">
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
+                        <div class="service-item  position-relative service-card" data-service="website">
                             <div class="icon">
 
                                 <i class="bi bi-code-square"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Custom Website Development</h3>
-                            </a>
+                            <h3>Custom Website Development</h3>
                             <h5>Tailored Solutions</h5>
                             <p class="mb-3">We build unique, responsive websites that reflect your brand and enhance user experience. Our team ensures every feature is custom-fit to your business needs.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
+                        <div class="service-item position-relative service-card" data-service="portal">
                             <div class="icon">
                                 <i class="fas fa-code"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Enterprise Portal Development</h3>
-                            </a>
+                            <h3>Enterprise Portal Development</h3>
                             <h5>Streamlined Operations</h5>
                             <p class="mb-3"> WWe develop secure and scalable enterprise portals that improve internal communication, collaboration, and data management for businesses of all sizes.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-item position-relative">
+                        <div class="service-item position-relative service-card" data-service="commerce">
                             <div class="icon">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>E-commerce Solutions</h3>
-                            </a>
+                            <h3>E-commerce Solutions</h3>
                             <h5>Drive Sales Online</h5>
                             <p class="mb-3">Our e-commerce platforms are designed to provide seamless shopping experiences, integrating powerful features to boost your online sales and customer engagement.</p>
                         </div>
@@ -173,6 +167,21 @@
 
                 </div>
 
+                <!-- Fancy Details Section -->
+                <div class="row mt-5">
+
+                    <div class="col-12">
+
+                        <div id="service-details"
+                             class="service-details-box d-none">
+
+                            <div id="service-content"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </section><!-- /Services Section -->
@@ -476,7 +485,130 @@
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
-    <!--<script src="/assets/js/footerlinks.js?v=<%= Date.now() %>"></script>-->
+    <script>
+
+        const serviceData = {
+
+            portal: `
+            <h3>Portal Development</h3>
+
+            <p>
+                Secure and scalable business portals tailored
+                for employees, customers, and partners.
+            </p>
+
+            <div class="service-tags">
+                <span>SharePoint</span>
+                <span>Role-Based Access</span>
+                <span>Dashboards</span>
+                <span>Workflows</span>
+            </div>
+
+            <ul>
+                <li>Employee intranet portals</li>
+                <li>Customer self-service portals</li>
+                <li>Workflow automation systems</li>
+                <li>Secure authentication and permissions</li>
+            </ul>
+
+            <div class="service-cta">
+                <a href="#contact" class="btn btn-primary">
+                    Discuss Your Portal
+                </a>
+            </div>
+        `,
+
+            website: `
+            <h3>Website Development</h3>
+
+            <p>
+                Professional websites built for speed,
+                SEO performance, and lead generation.
+            </p>
+
+            <div class="service-tags">
+                <span>SEO</span>
+                <span>Responsive Design</span>
+                <span>CMS</span>
+                <span>Performance</span>
+            </div>
+
+            <ul>
+                <li>Corporate business websites</li>
+                <li>SEO optimization</li>
+                <li>Landing pages and marketing sites</li>
+                <li>CMS integration and support</li>
+            </ul>
+
+            <div class="service-cta">
+                <a href="#contact" class="btn btn-primary">
+                    Build Your Website
+                </a>
+            </div>
+        `,
+
+            commerce: `
+            <h3>E-Commerce Solutions</h3>
+
+            <p>
+        We build modern, scalable e-commerce platforms that
+        help businesses sell online, streamline operations,
+        and deliver seamless customer experiences.
+    </p>
+
+    <div class="service-tags">
+        <span>Shopify</span>
+        <span>WooCommerce</span>
+        <span>Payments</span>
+        <span>Mobile Commerce</span>
+    </div>
+
+    <ul>
+        <li>Custom online store development</li>
+        <li>Secure payment gateway integration</li>
+        <li>Shopping cart & checkout optimization</li>
+        <li>Inventory and order management solutions</li>
+    </ul>
+
+            <div class="service-cta">
+        <a href="#contact" class="btn btn-primary">
+            Start Your E-Commerce Project
+        </a>
+    </div>
+        `
+        };
+
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+
+            card.addEventListener('click', function () {
+
+                const service = this.dataset.service;
+
+                document.getElementById('service-content').innerHTML =
+                    serviceData[service];
+
+                const detailsBox =
+                    document.getElementById('service-details');
+
+                detailsBox.classList.remove('d-none');
+
+                cards.forEach(c =>
+                    c.classList.remove('active-service'));
+
+                this.classList.add('active-service');
+
+                detailsBox.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+            });
+
+        });
+
+    </script>
     <script>
         const script = document.createElement('script');
         script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster

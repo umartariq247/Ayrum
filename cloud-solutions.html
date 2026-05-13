@@ -43,8 +43,8 @@
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
+    <link href="assets/css/main.css?v=1.1" rel="stylesheet">
+    
 </head>
 
 <body class="starter-page-page">
@@ -132,52 +132,85 @@
 
                 <div class="row gy-4">
 
+                    <!-- 1. Cloud Infrastructure Setup -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-item  position-relative">
-                            <div class="icon">
+                        <div class="service-item position-relative service-card"
+                             data-service="cloudinfra">
 
+                            <div class="icon">
                                 <i class="fas fa-network-wired"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Cloud Infrastructure Setup</h3>
-                            </a>
-                            <h5>Build a strong cloud foundation</h5>
-                            <p class="mb-3">We design and deploy scalable cloud infrastructure on platforms like Azure and AWS to ensure security, performance, and future-ready architecture for your business.</p>
-                        </div>
-                    </div><!-- End Service Item -->
 
+                            <h3>Cloud Infrastructure Setup</h3>
+
+                            <h5>Build a strong cloud foundation</h5>
+
+                            <p class="mb-3">
+                                We design and deploy scalable cloud infrastructure on platforms like Azure and AWS
+                                to ensure security, performance, and future-ready architecture for your business.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- 2. Cloud Optimization & Management -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-item position-relative">
+                        <div class="service-item position-relative service-card"
+                             data-service="cloudoptimization">
+
                             <div class="icon">
                                 <i class="fas fa-cloud-upload-alt"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Cloud Optimization & Management</h3>
-                            </a>
-                            <h5>Seamless, secure migration</h5>
-                            <p class="mb-3">Post-migration, we monitor, optimize, and manage your cloud environment to improve reliability, control costs, and ensure your systems run at peak efficiency.</p>
+
+                            <h3>Cloud Optimization & Management</h3>
+
+                            <h5>Performance, cost control & reliability</h5>
+
+                            <p class="mb-3">
+                                Post-migration, we monitor, optimize, and manage your cloud environment
+                                to improve reliability, control costs, and ensure peak performance.
+                            </p>
+
                         </div>
-                    </div><!-- End Service Item -->
+                    </div>
 
-
-
+                    <!-- 3. Cloud Migration Services -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="service-item position-relative">
-                            <div class="icon">
+                        <div class="service-item position-relative service-card"
+                             data-service="cloudmigration">
 
+                            <div class="icon">
                                 <i class="fas fa-bolt"></i>
                             </div>
-                            <a href="#" class="stretched-link">
-                                <h3>Cloud Migration Services</h3>
-                            </a>
-                            <h5>Seamless, secure migration</h5>
-                            <p class="mb-3">Whether you're moving from on-prem to cloud or between providers, our experts handle application, database, and workload migrations with zero data loss and minimal downtime.</p>
-                        </div>
-                    </div><!-- End Service Item -->
 
+                            <h3>Cloud Migration Services</h3>
+
+                            <h5>Zero-downtime secure migration</h5>
+
+                            <p class="mb-3">
+                                We migrate applications, databases, and workloads from on-prem or other clouds
+                                with minimal downtime and zero data loss.
+                            </p>
+
+                        </div>
+                    </div>
 
                 </div>
 
+                <div class="row mt-5">
+
+                    <div class="col-12">
+
+                        <div id="service-details"
+                             class="service-details-box d-none">
+
+                            <div id="service-content"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
 
         </section><!-- /Services Section -->
@@ -462,45 +495,7 @@
             </div>
 
         </section><!-- /Contact Section -->
-        <!--<section id="about" class="about section">
-        <div class="container">
-            <div class="row gy-4 gx-5">
-                <div class="col-lg-9 content" data-aos="fade-up" data-aos-delay="100">
-                    <h3>About Us</h3>
-                    <p>
-                        Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-                    </p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-vial-circle-check"></i>
-                            <div>
-                                <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                                <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-pump-medical"></i>
-                            <div>
-                                <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                                <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-heart-circle-xmark"></i>
-                            <div>
-                                <h5>Voluptatem et qui exercitationem</h5>
-                                <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 position-relative align-self-start" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/img/about.png" class="img-fluid" alt="">-->
-        <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>-->
-        <!--</div>
-                </div>
-            </div>
-        </section>-->
+        
 
     </main>
 
@@ -568,7 +563,129 @@
     <!-- Main JS File -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/vendor/jquery/jquery-3.6.0.min.js"></script>
-    <!--<script src="/assets/js/footerlinks.js?v=<%= Date.now() %>"></script>-->
+    <script>
+
+        const serviceData = {
+
+            cloudinfra: `
+        <h3>Cloud Infrastructure Setup</h3>
+
+        <p>
+            We design and deploy scalable cloud infrastructure using Azure and AWS,
+            ensuring security, performance, and future-ready architecture.
+        </p>
+
+        <div class="service-tags">
+            <span>Azure</span>
+            <span>AWS</span>
+            <span>Networking</span>
+            <span>Security</span>
+        </div>
+
+        <ul>
+            <li>Scalable cloud architecture design</li>
+            <li>Secure network configuration</li>
+            <li>High availability setup</li>
+            <li>Enterprise-grade infrastructure</li>
+        </ul>
+
+        <div class="service-cta">
+            <a href="#contact" class="btn btn-primary">
+                Discuss Your Cloud Setup
+            </a>
+        </div>
+    `,
+
+                cloudoptimization: `
+        <h3>Cloud Optimization & Management</h3>
+
+        <p>
+            We continuously monitor and optimize your cloud environment
+            to reduce costs and improve performance.
+        </p>
+
+        <div class="service-tags">
+            <span>Cost Optimization</span>
+            <span>Monitoring</span>
+            <span>Performance</span>
+            <span>Security</span>
+        </div>
+
+        <ul>
+            <li>Cloud cost optimization</li>
+            <li>Performance tuning</li>
+            <li>24/7 monitoring</li>
+            <li>Security hardening</li>
+        </ul>
+
+        <div class="service-cta">
+            <a href="#contact" class="btn btn-primary">
+                Optimize Your Cloud
+            </a>
+        </div>
+    `,
+
+                    cloudmigration: `
+        <h3>Cloud Migration Services</h3>
+
+        <p>
+            We migrate applications, databases, and workloads from on-premises
+            or other cloud platforms with zero downtime.
+        </p>
+
+        <div class="service-tags">
+            <span>Azure Migration</span>
+            <span>AWS Migration</span>
+            <span>Zero Downtime</span>
+            <span>Data Safety</span>
+        </div>
+
+        <ul>
+            <li>Application migration</li>
+            <li>Database migration</li>
+            <li>Legacy modernization</li>
+            <li>Minimal downtime strategy</li>
+        </ul>
+
+        <div class="service-cta">
+            <a href="#contact" class="btn btn-primary">
+                Start Migration Plan
+            </a>
+        </div>
+    `
+};
+
+        const cards = document.querySelectorAll('.service-card');
+
+        cards.forEach(card => {
+
+            card.addEventListener('click', function () {
+
+                const service = this.dataset.service;
+
+                document.getElementById('service-content').innerHTML =
+                    serviceData[service];
+
+                const detailsBox =
+                    document.getElementById('service-details');
+
+                detailsBox.classList.remove('d-none');
+
+                cards.forEach(c =>
+                    c.classList.remove('active-service'));
+
+                this.classList.add('active-service');
+
+                detailsBox.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+
+            });
+
+        });
+
+    </script>
     <script>
         const script = document.createElement('script');
         script.src = '/assets/js/footerlinks.js?v=' + new Date().getTime(); // Cache buster
