@@ -22,8 +22,9 @@
                                 <li><a href="/websites-webportals.html">Websites & Portals Development </a></li>\
                                 <li><a href="/ai-ml-services.html">AI & ML Services </a></li>\
                                 <li><a href="/microsoft-365.html">Microsoft 365 Services</a></li>\
-                                <li><a href="/microsoft-365.html">SharePoint & Power Apps Services</a></li>\
-                                <li><a href="cloud-solutions.html">Cloud Solutions & Migration</a></li>\
+                                <li><a href="/sharepoint-power-platform.html">SharePoint & Power Apps Services</a></li>\
+                                <li><a href="/cloud-solutions.html">Cloud Solutions & Migration</a></li>\
+                                <li><a href="/integration-automation.html">Integration & Automation Services</a></li>\
                             </ul>\
                         <li><a href="/blogs.html">Blogs</a></li>\
                         <li><a href="/cost-calculator.html">Cost Calculator</a></li>\
