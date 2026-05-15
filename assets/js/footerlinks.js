@@ -8,7 +8,7 @@
                         <p><strong>Email:</strong> <span><a href="mailto:ayrumconsulting@gmail.com" class="text-white">ayrumconsulting@gmail.com</a></span></p>';
 
     const facebookLink = "https://www.facebook.com/people/Ayrum-Consulting/61576042030779/";
-    const instaLink = "https://www.facebook.com/people/Ayrum-Consulting/61576042030779/";
+    const instaLink = "https://www.instagram.com/ayrum.ca/";
     const linkedInLink = "https://www.linkedin.com/company/ayrum-it-consulting";
 
     const headerNavMenu = '<ul>\
